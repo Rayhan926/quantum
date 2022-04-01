@@ -15,7 +15,6 @@ module.exports = {
           hard: "#050B1C",
           medium: "#191F3E",
           soft: "#242C51",
-          "very-soft": "#242C51"
         },
         gray: "#8D8CAB"
       }
