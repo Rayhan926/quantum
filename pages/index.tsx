@@ -39,7 +39,7 @@ const Home: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <main>
+            <main className="container">
                 <div className="grid grid-cols-1 lg:grid-cols-[60%,auto] gap-10 lg:gap-[60px]">
                     <div>
                         <img

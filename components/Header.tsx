@@ -18,7 +18,7 @@ const navs = [
     },
     {
         title: "FAQ",
-        url: "#",
+        url: "/faq",
     },
     {
         title: "Account",
@@ -26,7 +26,7 @@ const navs = [
     },
 ];
 
-const icons: IconType[] = [
+export const icons: IconType[] = [
     {
         Icon: BsDiscord,
         url: "#",
@@ -69,7 +69,7 @@ function Header() {
                 setMobieSidebarHeight("auto");
             }
         }, 100);
-    }, [windowWidth]);
+    }, [windowWidth, windowHeight]);
 
     return (
         <header
@@ -115,7 +115,7 @@ function Header() {
                                         <Link href={nav.url}>
                                             <a
                                                 onClick={closeSidebarForcely}
-                                                className={`hover:text-white/70 border-l-4 lg:border-b-2 lg:border-l-0 border-transparent font-semibold duration-100 px-6 py-2 block lg:p-1 ${
+                                                className={`hover:text-white/70 uppercase border-l-4 lg:border-b-2 lg:border-l-0 border-transparent font-semibold duration-100 px-6 py-4 lg:py-2 block lg:p-1 ${
                                                     isActive
                                                         ? "!text-white !border-primary"
                                                         : "text-gray"
@@ -128,11 +128,11 @@ function Header() {
                                 );
                             })}
 
-                            <li className="px-6 lg:px-0 mt-8 mb-6 lg:m-0">
+                            <li className="px-6 lg:px-0 mt-8 mb-8 lg:m-0">
                                 <SocialIcons icons={icons} />
                             </li>
 
-                            <li className="px-6 lg:px-0">
+                            <li className="px-6 lg:px-0 pb-2 lg:pb-0">
                                 <Button>Connect Wallet</Button>
                             </li>
                         </ul>

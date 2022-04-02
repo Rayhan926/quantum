@@ -70,11 +70,9 @@ const AccountPage: NextPage = () => {
                 <meta name="description" content="Quantam" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main>
+            <main className="container">
                 <p className="text-gray font-bold">MY ACCOUNT</p>
-                <h1 className="text-3xl md:text-4xl text-white tracking-wide font-extrabold uppercase mt-4">
-                    Allocations
-                </h1>
+                <h1 className="page_title">Allocations</h1>
                 <section className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-[30px]">
                     {allocationsCards.map((allocationsCard, i) => (
                         <AllocationCard {...allocationsCard} key={i} />

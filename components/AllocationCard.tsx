@@ -36,7 +36,7 @@ function AllocationCard({
                 <table className="border-collapse text-left">
                     <tbody>
                         {specificationsKeys.map((key, i) => (
-                            <tr className="text-white">
+                            <tr className="text-white" key={i}>
                                 <th className="text-[#8D8CAB] font-bold py-2.5">{key}</th>
                                 <th className="py-2.5 pl-6 font-normal">
                                     {specificationsValue[i]}
